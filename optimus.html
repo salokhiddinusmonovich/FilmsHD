@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers 7: Rise of the Beasts - MHD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="all Images/Images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+
+    <!--Scroll-Progress-bar==========-->
+
+    <div id="progress">
+        <span id="progress-value"></span>
+
+    </div>
+
+
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <a href="index.html" class="logo">
+            Movies<span>.hd</span>
+        </a>
+
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://t.me/salahytus">My TG channel</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="usmonovichss">Contact</a></li>
+        </ul>
+
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required/>
+            <button type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+
+    </nav>
+
+    <!--===Movie Banner-->
+
+    <section class="movie-banner">
+        <!--img-->
+        <div class="m-banner-img">
+            <img src="all Images/Movie-Data/op.png">
+        </div>
+
+        <!--content=================-->
+        <div class="banner-conteiner">
+
+            <!---title-->
+
+            <div class="title-container">
+                <!--title top-->
+                <div class="title-top">
+                <div class="movie-title">
+                    <h1>Transformers 7: Rise of the Beasts</h1>
+                </div>
+                <!---more about it-->
+                <div class="more-about-movie">
+                    <span class="quality">Full HD</span>
+                    <div class="rating">
+                        7.3 <img src="all Images/Images/IMDb-icon.png" alt="IMDb">
+                    </div>
+                    <span>7 December 2023</span>
+                    <span>1h 42min</span>
+                </div>
+                <!---language-->
+                <div class="language">
+                    <span>English</span>
+                </div>
+
+                </div>
+
+                <!----Title-bottom-->
+                <div class="title-bottom">
+                    <!---category-->
+                    <div class="category">
+                        <strong>Category</strong><br/>
+                        <a href="#">Sci-Fi</a>,<a href="#">Action</a>,<a href="#">Advature</a>
+                    </div>
+                    <!---treiler-btn-->
+                    <a href="https://youtu.be/itnqEauWQZM" class="watch-btn">Watch Trailer</a>
+
+                </div>
+            </div>
+
+            <!---play-btn-->
+
+            <div class="play-btn-container">
+                <div class="play-btn">
+                    <a href="javascript:void">
+                        <i class="fas fa-play"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <!----Vidio/full-Movie********************-->
+            <div id="play" class="play">
+                <!---close btn-->
+                <a href="javascript:void" class="close-movie">
+                    <i class="fas fa-times"></i>
+
+                </a>
+                <!--movie-->
+                <div class="play-movie">
+                    <video id="m-vidio" controls>
+                        <source src="all Images/Movie-Data/Transformers__Rise_of_the_Beasts___Official_Teaser_Trailer_2023.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+    </section>
+    <!---Banner-end-->
+
+    <!---------details==================-->
+    <section class="movie-details">
+        <strong>Transformers 7: Rise of the Beasts</strong>
+        <p>During the '90s, a new faction of Transformers - the Maximals - join the Autobots as allies in the battle for Earth.</p>
+
+    </section>
+
+    <!---ScreeenSHots-->
+
+    <section class="screenshots">
+        <strong>ScreenShots</strong>
+
+        <!--screenshots-conteiner-->
+        <div class="screen-s-conteiner">
+            <img src="all Images/Movie-Data/op1.png" alt="">
+            <img src="all Images/Movie-Data/op2.png" alt="">
+            <img src="all Images/Movie-Data/op3.png" alt="">
+            <img src="all Images/Movie-Data/op4.png" alt="">
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+    <!--==jQuery-->
+    <script src="jQuery.js"></script>
+
+ 
+    <script>
+        /*===scroll-progress-bar============*/
+        let scrollPercentage = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round(pos * 100 / calcHeight);
+    scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2g38 ${scrollValue}%)`;
+}
+
+window.onscroll = scrollPercentage;
+window.onload = scrollPercentage;
+
+
+        /*--menu-btn--fixed-when-scroll======*/
+        $(window).scroll(function(){
+    if($(document).scrollTop() > 20){
+        $('.navigation').addClass('fix-icon');
+    }
+    else{
+        $('.navigation').removeClass('fix-icon');
+    }
+    });
+
+    /*===popup-open================*/
+    $(document).on('click', '.play-btn a', function(){
+        $('.play').addClass('active-popular');
+    });
+
+    /*===popup-close================*/
+    $(document).on('click', '.close-movie', function(){
+        $('.play').removeClass('active-popular');
+    });
+
+    /*===auto-play-when-popup-open====================================*/
+    $('play-btn a').click(function(){
+        $('#m-video')[0].play(0);
+
+    });
+    /*==Close-vidio-when-popup-close======================*/
+    $('.close-movie').click(function(){
+        $('#m-video')[0].pause(0);
+
+    });
+
+    </script>
+
+
+
+</body>
+
+</html>
